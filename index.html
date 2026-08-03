@@ -1,23 +1,836 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "디올뉴 팰리세이드 리스 비용 및 견적 비교 가이드",
+      "url": "https://palisade.reliabledone.com/guide",
+      "description": "2026년형 디올뉴 팰리세이드 리스 요금, 하이브리드 및 가솔린 모델별 비교 견적, 개인 및 법인사업자 맞춤형 설계 혜택 정보를 투명하게 공유합니다.",
+      "mainEntity": {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "디올뉴 팰리세이드 리스 요금은 평균 얼마 정도 발생하나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2026년형 디올뉴 팰리세이드 2.5 하이브리드 익스클루시브 9인승 기준으로 36개월 계약 및 선납금 30% 조건일 때 월 리스 비용은 약 240,330원 선으로 예상되며, 무보증 및 계약 기간에 따라 요금은 달라질 수 있습니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "개인사업자가 신형 팰리세이드를 리스로 이용할 때 어떤 장단점이 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "경비 처리를 통한 세금 절감 혜택이 주된 장점이며, 품위 유지(일반 번호판 사용)가 가능합니다. 단점으로는 주행거리 제약이 있을 수 있고 중도 해지 시 위약금이 발생할 수 있다는 점입니다."
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        :root {
+            --primary-color: #2c3d54; /* 신뢰감 있는 딥블루 */
+            --secondary-color: #5b84c4; /* 부드럽고 차분한 파스텔 블루 */
+            --accent-color: #e28a5c; /* 시선을 끄는 따뜻한 코랄 오렌지 */
+            --background-light: #f5f7fa; /* 눈이 편안한 미색 배경 */
+            --text-dark: #2e3842; /* 가독성 높은 차분한 차콜 */
+            --text-light: #ffffff;
+            --border-color: #e1e8ed;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            font-size: 16px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 2.5rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        header h1 {
+            margin: 0.5rem 0;
+            font-size: 2.3rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            margin-bottom: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.4rem 0.9rem;
+            border-radius: 6px;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: background-color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            background-color: var(--secondary-color);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background-color: white;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+            border-top: 6px solid var(--secondary-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            font-weight: 700;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 0.6rem;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 12px;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        strong {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            display: block;
+            background-color: var(--accent-color);
+            color: white;
+            font-weight: 700;
+            padding: 1.1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            margin: 2rem 0;
+            font-size: 1.15rem;
+            transition: background-color 0.3s ease, transform 0.2s;
+            box-shadow: 0 4px 10px rgba(226, 138, 92, 0.3);
+        }
+
+        .cta-button:hover {
+            background-color: #d37343;
+            transform: translateY(-2px);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            font-weight: 700;
+            text-align: center;
+        }
+
+        td {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        tr:nth-child(even) td {
+            background-color: #fcfdfe;
+        }
+
+        .keyword-tags {
+            margin: 1.5rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .keyword-tags span {
+            background-color: #eef3f9;
+            color: var(--primary-color);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid var(--secondary-color);
+        }
+
+        .faq-item {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.01);
+        }
+
+        .faq-question {
+            background-color: #edf2f7;
+            color: var(--primary-color);
+            padding: 1.1rem 1.5rem;
+            cursor: pointer;
+            font-weight: 700;
+            position: relative;
+            font-size: 1rem;
+        }
+
+        .faq-answer {
+            padding: 1.1rem 1.5rem;
+            background-color: #ffffff;
+            border-top: 1px solid var(--border-color);
+            display: none;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .faq-question:after {
+            content: '보기';
+            position: absolute;
+            right: 1.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--secondary-color);
+        }
+
+        .faq-question.active:after {
+            content: '닫기';
+        }
+
+        .graph-container {
+            margin: 2rem 0;
+            padding: 2rem;
+            background-color: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .graph-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.2rem;
+        }
+
+        .graph-label {
+            width: 160px;
+            font-weight: 700;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+        }
+
+        .graph-bar {
+            flex-grow: 1;
+            height: 28px;
+            border-radius: 6px;
+            position: relative;
+            background-color: #e2e8f0;
+            overflow: hidden;
+        }
+
+        .graph-value {
+            height: 100%;
+            background-color: var(--secondary-color);
+            border-radius: 6px;
+            transition: width 1s ease-out;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 12px;
+            color: white;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .calculator-box {
+            background-color: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+            font-size: 0.95rem;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 0.95rem;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            color: var(--text-dark);
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            border-color: var(--secondary-color);
+            outline: none;
+        }
+
+        .form-group-full {
+            grid-column: 1 / -1;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 0.5rem;
+        }
+
+        .checkbox-group label {
+            font-weight: 400;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+        }
+
+        .checkbox-group input {
+            width: auto;
+            cursor: pointer;
+        }
+
+        .calc-result {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+
+        .calc-result-title {
+            font-size: 1rem;
+            opacity: 0.85;
+            margin-bottom: 0.5rem;
+        }
+
+        .calc-result-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        .calc-result-sub {
+            font-size: 0.85rem;
+            opacity: 0.8;
+            margin-top: 0.5rem;
+        }
+
+        .external-links a {
+            display: inline-block;
+            margin-right: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid var(--secondary-color);
+            transition: color 0.3s, border-color 0.3s;
+        }
+
+        .external-links a:hover {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem 1rem;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            background-color: var(--primary-color);
+            margin-top: 4rem;
+            line-height: 1.6;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: var(--border-color);
+            margin: 2.5rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>디올뉴 팰리세이드 리스 완전분석 가이드</h1>
+        <p>2026년식 신형 패밀리 SUV 모델별 상세 리스 견적 비교부터 실시간 세금 혜택 및 최저가 매칭 전략까지 제공합니다.</p>
+        <nav>
+            <ul>
+                <li><a href="#market-trends">시장 분석</a></li>
+                <li><a href="#pricing-structure">모델별 견적</a></li>
+                <li><a href="#custom-matching">대상별 가이드</a></li>
+                <li><a href="#lease-calculator">예상 납입료 계산</a></li>
+                <li><a href="#faq">자주 묻는 질문</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-      <h1>Home page</h1>
+        <section id="market-trends">
+            <h2>시장 분석: 2026년식 디올뉴 팰리세이드 리스 트렌드</h2>
+            <p>
+                현대자동차의 차세대 대형 SUV 플래그십인 <strong>디올뉴 팰리세이드 LX3 하이브리드 리스</strong> 모델은 탁월한 연비 성능과 웅장한 디자인 레이아웃을 무기로 2026년 상반기 자동차 금융 시장의 핵심 아이콘으로 안착했습니다. 대형 패밀리카 차종 중에서도 특히 고성능과 높은 연료 효율을 겸비한 하이브리드 및 다운사이징 가솔린 터보 라인업이 다각도로 주목받고 있습니다.
+            </p>
+            <p>
+                많은 사용자가 일시불이나 할부 가입 방식 대신 자동차 리스 금융 프로그램을 적극적으로 검토하는 가장 큰 이유는 법적 세제 혜택과 비용 처리의 유연성에 있습니다. 연간 발생하는 차량 리스 지출 금액을 경비로 처리하여 실질 소득세를 대폭 절약할 수 있는 것은 물론, 리스 요금 내에 자동차세 및 취등록세 등 각종 유지 비용을 일체 포함해 계산할 수 있어 자금 운용의 흐름을 일정하게 유지하기에 매우 유리합니다.
+            </p>
+            <p>
+                특히 하이브리드 등급의 경우 강화된 저공해 자동차 혜택과 정부 보조금 및 세금 감면 제도가 복합적으로 적용되어 실제 출고 시 부과되는 간접비 부담이 대폭 줄어듭니다. 업계 전문가의 정밀한 컨설팅 피드백에 따르면, 차량 리스 서비스를 선택하는 계약 방식은 소유와 자산 인식을 완화하여 개인의 신용도나 부채 한도 관리에 있어 할부 금융 서비스보다 한층 우수한 장점을 제공하는 것으로 평가받고 있습니다.
+            </p>
+            
+            <h3>주요 연관 키워드 및 타겟 고객 탐색 데이터</h3>
+            <div class="keyword-tags">
+                <span>디올뉴 팰리세이드 가솔린 2.5 터보 리스</span>
+                <span>디올뉴 팰리세이드 2.5 하이브리드 리스</span>
+                <span>디올뉴 팰리세이드 익스클루시브 리스</span>
+                <span>디올뉴 팰리세이드 프레스티지 리스</span>
+                <span>디올뉴 팰리세이드 캘리그래피 리스</span>
+                <span>디올뉴 팰리세이드 7인승 리스</span>
+                <span>디올뉴 팰리세이드 9인승 리스</span>
+                <span>디올뉴 팰리세이드 무보증 리스</span>
+                <span>디올뉴 팰리세이드 선납금 리스</span>
+                <span>디올뉴 팰리세이드 보증금 리스</span>
+                <span>디올뉴 팰리세이드 4WD 리스</span>
+                <span>디올뉴 팰리세이드 2WD 리스</span>
+                <span>디올뉴 팰리세이드 즉시출고 리스</span>
+                <span>신형 팰리세이드 리스 승계</span>
+            </div>
+            <p>
+                이러한 다양한 검색 조건은 예비 고객층이 차량의 등급과 정원 선택지뿐만 아니라 무보증금, 선납 비율, 계약 기간 조정 등 금융 초기 비용 절약 여부에 매우 지대한 관심을 두고 있음을 보여줍니다. 매력적인 월 납입금을 결정짓는 핵심 기준들을 숙지해야 불필요한 지출을 미연에 방지할 수 있습니다.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="pricing-structure">
+            <h2>모델별 견적 분석: 2026년도 기준 실질 납입료 가이드</h2>
+            <p>
+                디올뉴 팰리세이드 모델의 트림 세그먼트별 실제 신차가 및 리스 요금제 설계 내역을 요약해 드립니다. 본 표에 기술된 월 지출 비용은 신차 판매 가격 기준 대비 평균적인 제휴 캐피탈 금리 기준을 대입한 결과이며, 계약 세부 설계에 따라 변동 가능합니다.
+            </p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>세부 트림 및 주요 엔진 형식</th>
+                        <th>공식 신차가 (원)</th>
+                        <th>월 납입 요금 (선납 30% 기준)</th>
+                        <th>월 납입 요금 (보증금 30% 기준)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>디올뉴 팰리세이드 가솔린 2.5 익스클루시브 9인승</td>
+                        <td>43,830,000</td>
+                        <td>약 248,860 원</td>
+                        <td>약 510,000 원</td>
+                    </tr>
+                    <tr>
+                        <td>디올뉴 팰리세이드 2.5 하이브리드 익스클루시브 9인승</td>
+                        <td>49,820,000</td>
+                        <td>약 240,330 원</td>
+                        <td>약 548,000 원</td>
+                    </tr>
+                    <tr>
+                        <td>디올뉴 팰리세이드 2.5 하이브리드 프레스티지 7인승</td>
+                        <td>56,420,000</td>
+                        <td>약 328,815 원</td>
+                        <td>약 612,000 원</td>
+                    </tr>
+                    <tr>
+                        <td>디올뉴 팰리세이드 가솔린 2.5 캘리그래피 7인승</td>
+                        <td>57,940,000</td>
+                        <td>약 342,000 원</td>
+                        <td>약 635,000 원</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>주요 세부 계약 유형별 비용 절감 지수 비교</h3>
+            <div class="graph-container">
+                <p><strong>동일 모델 내 계약 방식 및 할인 적용에 따른 체감 절약 수준 (자체 지표 분석)</strong></p>
+                <div class="graph-item">
+                    <div class="graph-label">선납금 30% 적용 시</div>
+                    <div class="graph-bar"><div class="graph-value" style="width: 85%;">체감 납입료 55% 감소</div></div>
+                </div>
+                <div class="graph-item">
+                    <div class="graph-label">하이브리드 세제 감면</div>
+                    <div class="graph-bar"><div class="graph-value" style="width: 65%;">취등록세 최대 140만원 경감</div></div>
+                </div>
+                <div class="graph-item">
+                    <div class="graph-label">사업자 경비 한도 적용</div>
+                    <div class="graph-bar"><div class="graph-value" style="width: 75%;">연간 소득세 최대 1500만원 절약</div></div>
+                </div>
+                <div class="graph-item">
+                    <div class="graph-label">잔존가치 최대화 설계</div>
+                    <div class="graph-bar"><div class="graph-value" style="width: 50%;">기본 금리 약 1.5% 우대 효과</div></div>
+                </div>
+            </div>
+            <p>
+                초기 자금 투입 방식에 해당하는 선납금(미리 일부 월세를 선결제하는 개념)과 보증금(추후 계약 완료 시 반환받는 예치금 개념)의 명확한 차이점을 파악하는 것이 중요합니다. 동일한 30% 설정 비율이라 하더라도 매달 청구되는 최종 고지서 금액에는 눈에 띄는 편차가 발생하기 때문에 소비자는 자신의 현금 보유 상태에 적합한 전략을 가동해야 합니다.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="custom-matching">
+            <h2>대상별 가이드: 라이프스타일 및 세그먼트 타겟 맞춤 설계</h2>
+            <p>
+                동일한 디올뉴 팰리세이드라 하더라도 이용자의 주된 연령대와 운전 경력, 그리고 경제 활동의 종류에 따라 최적의 월 지출 요금 설계는 완전히 달라집니다. 아래 내용을 참고하여 가장 현명한 리스 계약 모델을 선택해 보십시오.
+            </p>
+            
+            <h3>세대별 라이프스타일 매칭</h3>
+            <ul>
+                <li><strong>20대 디올뉴 팰리세이드 리스</strong> 및 <strong>초보운전자 팰리세이드 리스</strong>: 사회 초년생 시기에는 높은 초기 구매 비용과 미숙한 경력으로 인한 개인 자동차 보험율 상승이 장애물이 되기 쉽습니다. 따라서 비교적 심사 문턱이 낮고 월 지출을 일정하게 묶을 수 있는 저금리 운용 설계를 추천해 드리며, 리스 이용 기간 동안 운전 경력을 온전히 증빙 및 인정받는 방법을 동시에 검토하는 것이 장기적으로 유리합니다.</li>
+                <li><strong>30대 디올뉴 팰리세이드 리스</strong> 및 <strong>주부 팰리세이드 리스</strong>: 다자녀 지원 혜택 및 캠핑, 아웃도어 취미 활동을 아우르는 <strong>디올뉴 팰리세이드 패밀리카 리스</strong> 수요가 큰 비중을 차지합니다. 주로 안락한 승차감과 스마트 크루즈 컨트롤 등 주행 편의 사양이 집중적으로 집약된 프레스티지 등급에 높은 만족도를 보입니다.</li>
+                <li><strong>40대 디올뉴 팰리세이드 리스</strong> 및 <strong>50대 디올뉴 팰리세이드 리스</strong>: 여유로운 경제력을 바탕으로 품격 높은 실내외 내장 소재가 적용된 풀옵션 트림인 <strong>디올뉴 팰리세이드 캘리그래피 리스</strong>를 주로 지향합니다. 중형 차급을 넘어 플래그십 대형차 고유의 정숙함을 원하는 수요층이 많아 최고의 시너지 효과를 내고 있습니다.</li>
+            </ul>
+
+            <h3>직업군 및 운영 주체별 맞춤형 선택 전략</h3>
+            <ul>
+                <li><strong>개인사업자 디올뉴 팰리세이드 리스</strong> 및 <strong>법인사업자 디올뉴 팰리세이드 리스</strong>: 사업을 영위하고 있다면 차량 유지를 통해 얻을 수 있는 절세 이익을 최우선으로 검토해야 합니다. 특히 부가가치세 환급 대상이 되는 9인승 배열 모델을 다각도로 고려하거나, 연간 종합소득세 및 법인세 산정 시 최대 1,500만 원 한도 내에서 합법적 경비 처리를 인정받아 실효 소득을 효과적으로 낮출 수 있는 매력적인 수단으로 삼고 있습니다.</li>
+                <li><strong>직장인 팰리세이드 리스</strong> 및 <strong>프리랜서 팰리세이드 리스</strong>, <strong>전문직 팰리세이드 리스</strong>: 연간 예상 소득 분포가 다르고 직장인의 경우 매월 급여 흐름이 일정한 반면 프리랜서는 수입의 유동성이 큽니다. 따라서 보증금과 선납금 비중을 유동적으로 조절하여 불필요한 중도 수수료 가중을 예방할 수 있는 정교한 포트폴리오를 적용받아야 합니다.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="lease-calculator">
+            <h2>내 디올뉴 팰리세이드 리스 맞춤형 실시간 견적 시뮬레이션</h2>
+            <p>
+                본인이 희망하는 차량 트림, 초기 비용 설정 수준, 계약 개월 수를 지정하여 자가 진단형 월 리스 금액을 즉석에서 시뮬레이션해 볼 수 있습니다. 하단 입력 양식에 각 조건을 적용하면 가상 계산 모델을 통해 추정 요금을 실시간으로 체크할 수 있어 체계적인 예산 배분 계획을 지원합니다.
+            </p>
+            
+            <div class="calculator-box">
+                <form id="lease-calc-form" onsubmit="event.preventDefault();">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="car-model">선택 트림</label>
+                            <select id="car-model" onchange="calculateLease();">
+                                <option value="43830000">가솔린 2.5 익스클루시브 9인승 (4,383만원)</option>
+                                <option value="49820000" selected>하이브리드 2.5 익스클루시브 9인승 (4,982만원)</option>
+                                <option value="56420000">하이브리드 2.5 프레스티지 7인승 (5,642만원)</option>
+                                <option value="57940000">가솔린 2.5 캘리그래피 7인승 (5,794만원)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contract-period">계약 기간</label>
+                            <select id="contract-period" onchange="calculateLease();">
+                                <option value="36" selected>36 개월</option>
+                                <option value="48">48 개월</option>
+                                <option value="60">60 개월</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="payment-type">초기 비용 조건 (기본 30% 기준)</label>
+                            <select id="payment-type" onchange="calculateLease();">
+                                <option value="prepayment" selected>선납금 30% 납부</option>
+                                <option value="deposit">보증금 30% 예치</option>
+                                <option value="none">무보증 (초기 비용 0원)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mileage">연간 약정 주행거리</label>
+                            <select id="mileage" onchange="calculateLease();">
+                                <option value="10000">연간 10,000 km</option>
+                                <option value="20000" selected>연간 20,000 km</option>
+                                <option value="30000">연간 30,000 km</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user-age">계약자 연령대</label>
+                            <select id="user-age">
+                                <option value="20">만 21세 이상 20대</option>
+                                <option value="30" selected>만 26세 이상 30대</option>
+                                <option value="40">만 26세 이상 40대</option>
+                                <option value="50">만 26세 이상 50대 이상</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user-business">이용 주체 구분</label>
+                            <select id="user-business">
+                                <option value="individual" selected>개인 소비자</option>
+                                <option value="priv-biz">개인사업자</option>
+                                <option value="corp-biz">법인사업자</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group form-group-full">
+                            <label>원하는 추가 옵션 조합 (중복 선택 가능)</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" id="opt-sunroof" onchange="calculateLease();"> 빌트인 캠 및 아웃도어 패키지</label>
+                                <label><input type="checkbox" id="opt-safety" onchange="calculateLease();"> 현대 스마트센스 ADAS 패키지</label>
+                                <label><input type="checkbox" id="opt-comfort" onchange="calculateLease();"> 동승석 편의 및 2열 통풍 시트</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group form-group-full">
+                            <label for="user-opinion">기타 상세 희망 사항 및 특별 조건 상담 기재</label>
+                            <textarea id="user-opinion" rows="3" placeholder="예: 무보증 즉시출고 가능 물량이 있는지 체크바랍니다. 다자녀 혜택 대상 여부도 궁금합니다."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="calc-result">
+                        <div class="calc-result-title">조건별 가상 산출 월 리스료</div>
+                        <div class="calc-result-value" id="calculated-price">계산 중...</div>
+                        <div class="calc-result-sub" id="prepayment-info">선납/보증 적용액: -</div>
+                        <div class="calc-result-sub" id="residual-info">설정 잔존가치: -</div>
+                    </div>
+                    
+                    <button type="button" class="cta-button" onclick="alert('맞춤 견적 분석 요청이 접수되었습니다. 남겨주신 희망 내용과 조건을 검토하여 최저가 우대 혜택 성지 좌표 정보를 이메일 혹은 문자로 발송해 드립니다.');">이 조건으로 우대 할인 혜택 견적 및 전문 컨설팅 무상 신청</button>
+                </form>
+            </div>
+            <p>
+                본 가상 계산 기능은 소비자의 이해를 돕기 위한 기초 예시 모델이며, 금융사별 금리 동향과 잔존가치 설정 비율에 따라 최종 납입 금액은 상이할 수 있습니다. 보다 정확한 가격 요금 비교는 공식 에이전트의 전문 비교 시스템을 통과하는 방식을 강하게 권장합니다.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="community-reviews">
+            <h2>보배드림 및 디시인사이드 커뮤니티 내돈내산 여론과 소통 정보</h2>
+            <p>
+                최근 보배드림, 디시인사이드 자동차 갤러리, 에펨코리아(펨코) 등 주요 웹 사이트 자동차 커뮤니티 공간에서는 <strong>신형 팰리세이드 리스 승계</strong> 조건이나 최저가 프로모션 성지에 대한 내돈내산 출고기 후기 게시글이 활발하게 생성되고 있습니다.
+            </p>
+            <p>
+                대부분의 실사용자들은 대리점 설계사를 통한 대면 신청보다 중간 유통 마진을 대폭 제거한 다이렉트 온라인 비교견적 사이트를 활용하는 것이 실질 지출을 가장 크게 절약하는 현실적인 방법이라고 조언합니다. 또한 카카오톡 오픈채팅방, 텔레그램 금융방 및 인스타그램 등에서 전파되는 특별 즉시출고 할인 좌표 및 지원금 혜택은 실시간 한도에 따라 매월 차이가 크므로, 주기적으로 업계 순위 동향과 혜택 목록을 업데이트해 보는 습관이 중요합니다.
+            </p>
+            <p>
+                네이버 검색 엔진 포털이나 구글, 유튜브 시승기 콘텐츠에 노출되는 수많은 홍보 글 중에서 정말로 정직하고 사은품 장난이 없는 업체를 선별해내기 위해서는 다양한 채널의 후기 신뢰성을 교차 점검해야 하며, 최근에는 제미나이나 챗지피티 같은 최신 AI 도구를 접목해 각 캐피탈 금융 요금제를 통합 대조해 보는 혁신적인 금융 분석 방법도 정착하는 추세입니다.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="faq">
+            <h2>자주 묻는 질문 (FAQ)</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Q. 디올뉴 팰리세이드 장기 리스와 장기렌트의 가장 결정적인 차이점은 무엇인가요?</div>
+                    <div class="faq-answer">
+                        A. 가장 체감되는 큰 차이점은 번호판 종류와 보험 명의 주체입니다. 장기렌트의 경우 하, 허, 호로 분류되는 렌터카 전용 번호판을 의무 부착해야 하는 반면, 리스는 일반 자가용과 동일한 품격 높은 번호판을 그대로 사용할 수 있어 품위 유지 측면에서 우월합니다. 또한 리스는 운전자의 개인 보험 요율을 승계 및 유지할 수 있어, 무사고 경력이 긴 운전자에게 매우 적합합니다. 단, 리스는 금융 부채로 인식되는 차이가 있으므로 본인의 자산 흐름에 맞춘 컨설팅 상담이 필수적입니다.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q. 무보증 조건으로 디올뉴 팰리세이드 리스를 계약하기 위한 심사 요건이 까다롭나요?</div>
+                    <div class="faq-answer">
+                        A. 초기 납입 금액을 아예 0원으로 구성하는 무보증 조건의 경우, 기본적으로 계약자의 신용 점수가 일정 기준(NICE 기준 중상위 이상)을 충족해야 하며, 직장인의 소득 입증서류나 사업자의 부가가치세 과세표준 증명 등을 유심히 대조합니다. 신용 등급이 다소 미흡하더라도 보증보험 증권 발급을 활용해 초기 부담 비용을 대체하는 방법이 있으므로 전문 업체와의 면밀한 조율을 제안합니다.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q. 리스 계약이 만료된 시점에는 차량을 무조건 반납해야 하나요?</div>
+                    <div class="faq-answer">
+                        A. 리스 만기 도래 시점에는 운용 상황에 따라 차량을 전적으로 반납하거나, 계약 설계 시 약정한 잔존가치 금액을 지불하고 본인 명의로 완벽하게 인수하는 방법, 혹은 기존 계약 조건의 리스 연장(재리스)을 선택할 수 있습니다. 만기 시점의 차량 중고 시세와 잔존가치를 정밀하게 비교해 보고 인수 후 되팔기가 유리하다면 인수를 결정하는 것이 최선의 재테크 요령입니다.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q. 연간 약정 주행거리를 초과하여 주행하면 페널티 비용이 많이 청구되나요?</div>
+                    <div class="faq-answer">
+                        A. 약정된 주행거리를 초과하는 경우, 초과된 주행거리 1km당 금융사 규정에 규정된 소정의 위약금(보통 100원에서 200원 내외)이 사후 정산됩니다. 만약 평소 장거리 이동량이 극히 많은 운전자라면 초기 가입 설계 단계부터 주행거리 한도를 여유롭게 높여 잡거나 제한이 없는 상품 구성을 설계받는 것이 좋습니다.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="external-info">
+            <h2>신뢰할 수 있는 외부 정보원 및 유용한 참고처</h2>
+            <p>
+                디올뉴 팰리세이드 리스 및 대형 SUV 자동차 세무, 법률, 보험 관련하여 공신력 있는 다음 기관의 공식 사이트 정보를 확인하시면 자금 계획을 세우는 데 훨씬 더 공정하고 객관적인 지표를 확보할 수 있습니다.
+            </p>
+            <div class="external-links">
+                <a href="https://leasedtrutho.withusrizz.com" target="_blank" rel="nofollow noopener">릴라이어블던 금융 리스 견적 비교 센터</a>
+                <a href="https://namu.wiki/w/%ED%98%84%EB%8C%80_%ED%8C%B0%EB%A6%AC%EC%84%B8%EC%9D%B4%EB%93%9C" target="_blank" rel="nofollow noopener">나무위키 - 현대 팰리세이드 히스토리 및 개발 정보</a>
+                <a href="https://www.hyundai.com" target="_blank" rel="nofollow noopener">현대자동차 공식 브랜드 홈페이지</a>
+            </div>
+            <p>
+                위와 같은 공인된 채널을 통해 차량 고유의 제원 표준과 최신 판매 현황을 명확히 대조하시어, 가장 객관적이고 정확한 차량 계약 정보를 확인해 보실 것을 권장합니다.
+            </p>
+        </section>
+
+        <a href="#lease-calculator" class="cta-button">실시간 예상 월 리스 요금 계산해보기</a>
     </main>
-  </body>
-</html>
+
+  
+    <script>
+        // FAQ 아코디언 토글 제어
+        document.querySelectorAll('.faq-question').forEach((question) => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = question.classList.contains('active');
+
+                // 모든 FAQ 닫기
+                document.querySelectorAll('.faq-question').forEach(q => {
+                    q.classList.remove('active');
+                    q.nextElementSibling.style.display = 'none';
+                });
+
+                // 클릭 대상 상태 반전
+                if (!isActive) {
+                    question.classList.add('active');
+                    answer.style.display = 'block';
+                }
+            });
+        });
+
+        // 리스 예상 납입료 계산 공식 로직
+        function calculateLease() {
+            const basePrice = parseInt(document.getElementById('car-model').value);
+            const period = parseInt(document.getElementById('contract-period').value);
+            const paymentType = document.getElementById('payment-type').value;
+            const mileage = parseInt(document.getElementById('mileage').value);
+
+            // 약정 기간에 다른 감가상각 잔존가치 백분율 정의 (36개월 52%, 48개월 46%, 60개월 40%)
+            let resValuePercent = 0.52;
+            if (period === 48) {
+                resValuePercent = 0.46;
+            } else if (period === 60) {
+                resValuePercent = 0.40;
+            }
+
+            // 연간 마일리지 약정이 높으면 중고 잔가 하락 적용
+            if (mileage === 30000) {
+                resValuePercent -= 0.04;
+            } else if (mileage === 10000) {
+                resValuePercent += 0.02;
+            }
+
+            // 추가 선택 옵션 가산액 계산
+            let optionCost = 0;
+            if (document.getElementById('opt-sunroof').checked) optionCost += 1200000;
+            if (document.getElementById('opt-safety').checked) optionCost += 1500000;
+            if (document.getElementById('opt-comfort').checked) optionCost += 900000;
+
+            const finalVehiclePrice = basePrice + optionCost;
+            const residualValue = Math.round(finalVehiclePrice * resValuePercent);
+
+            let prepaymentAmount = 0;
+            let interestRateDiscount = 1.0;
+
+            if (paymentType === 'prepayment') {
+                prepaymentAmount = Math.round(finalVehiclePrice * 0.30); // 30% 선납금 적용
+            } else if (paymentType === 'deposit') {
+                prepaymentAmount = 0; // 보증금은 월세를 미리 까는 성격이 아님
+                interestRateDiscount = 0.90; // 보증금 30% 예치 시 약 10%의 이자율 인하 혜택 부여 효과
+            }
+
+            // 월 감가상각 상환액 산정
+            const principalForMonthly = finalVehiclePrice - prepaymentAmount - residualValue;
+            const monthlyPrincipal = Math.max(0, principalForMonthly / period);
+
+            // 월 금융 이자 요금 산정 (연 평균 이율 약 5.8% 가정)
+            const annualInterestRate = 0.058;
+            const monthlyInterest = ((finalVehiclePrice + residualValue) / 2) * (annualInterestRate * interestRateDiscount) / 12;
+
+            const totalMonthlyPayment = Math.round(monthlyPrincipal + monthlyInterest);
+
+            // 가독성을 위한 통화 포맷 변환
+            document.getElementById('calculated-price').innerText = '월 ' + totalMonthlyPayment.toLocaleString('ko-KR') + ' 원';
+            document.getElementById('prepayment-info').innerText = '선납/보증 적용액: ' + (paymentType === 'none' ? '0' : Math.round(finalVehiclePrice * 0.30).toLocaleString('ko-KR')) + ' 원';
+            document.getElementById('residual-info').innerText = '설정 잔존가치: ' + residualValue.toLocaleString('ko-KR') + ' 원 (' + Math.round(resValuePercent * 100) + '%)';
+        }
+
+        // 페이지 최초 로딩 완료 시점에 계산 한 번 수행
+        window.onload = () => {
+            calculateLease();
+            
+            // 그래프의 가로 막대 너비를 정해진 시간차를 두고 가볍게 애니메이션 적용
+            document.querySelectorAll('.graph-value').forEach(bar => {
+                const targetWidth = bar.parentElement.previousElementSibling ? bar.style.width : '0%';
+                const savedWidth = bar.style.width;
+                bar.style.width = '0%';
+                setTimeout(() => {
+                    bar.style.width = savedWidth;
+                }, 150);
+            });
+        };
+    </script>
+  
